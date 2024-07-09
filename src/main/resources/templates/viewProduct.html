@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" data-th-replace="~{base::layout(~{::section})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="w-{90wh} h-{90vh} border ">
+            <h3 class="text-center">Product Details</h3>
+            <div class="md:grid md:grid-cols-10 p-8">
+
+                <div class="md:col-span-2"></div>
+                <div class="md:col-span-3 flex justify-center items-center">
+                    <div>
+                        <img src="/img/productImg/watch.png" alt="">
+                    </div>
+                </div>
+                <div class="md:col-span-5">
+                    <div class="p-5 pt-8 dark:text-white">
+                        <h2 class="font-extrabold text-3xl">laptop</h2>
+                        <h3 class="font-serif text-xl pt-4">Description : </h3>
+                        <p class=" text-base">Hp Laptop <span>256GB SSD</span></p>
+                        <h3 class="pt-4 text-xl font-serif">Product Details : </h3>
+                        <p>Status : <span class="bg-green-500 rounded-md p-1">available</span> <span
+                                class="bg-red-600 rounded-md p-1">Out of
+                                Stock</span></p>
+                        <p>Policy : <span>7 Day Replacement & Return</span></p>
+                        <h1 class="text-2xl">Price <span class="text-4xl pl-4">&#8377;700000</span><span
+                                class="line-through">500000</span> <span class="text-green-600 font-normal">50%
+                                off</span></h1>
+                        <div class="md:flex pt-4 pb-4">
+                            <div class="text-center p-1 gap-2 text-green-600 text-xl font-semibold"><i
+                                    class="fa-solid fa-sack-dollar"></i>
+                                <p class="">Cash On Delivery</p>
+                            </div>
+                            <div class="text-center p-1 gap-2 text-red-600 text-xl font-semibold"><i
+                                    class="fa-solid fa-rotate-left"></i>
+                                <p class="">Return Available</p>
+                            </div>
+                            <div class="text-center p-1 gap-2 text-blue-600 text-xl font-semibold"><i
+                                    class="fa-solid fa-truck-arrow-right"></i>
+                                <p class="">Free shipping</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a href="#" class="bg-yellow-500  p-2 text-3xl font-bold uppercase">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

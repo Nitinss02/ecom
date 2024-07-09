@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" data-th-replace="~{base::layout(~{::section})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="sm:p-4 sm:m-4  h-full">
+            <h1 class="text-center p-4 font-serif text-3xl text-white">Admin Dashboard</h1>
+            <div class="md:grid grid-cols-6 snap-center">
+                <div class=" col-span-2"></div>
+                <div class=" col-span-2 p-4 m-2 text-left">
+                    <a data-th-href="@{/admin/AddProduct}">
+                        <div
+                            class="p-5 m-2 font-semibold dark:shadow-lg shadow-lg  dark:shadow-white hover:bg-amber-500 hover:text-black hover:scale-105 border dark:text-white rounded-xl space-x-6">
+                            <i class="fa-solid fa-cart-plus"></i><span>Add
+                                Prodcut</span>
+                        </div>
+                    </a>
+                    <a data-th-href="@{/admin/Category}">
+                        <div
+                            class="p-5 m-2 font-semibold dark:shadow-lg shadow-lg  dark:shadow-white hover:bg-lime-500 hover:text-black hover:scale-105 border-b dark:text-white rounded-xl space-x-6">
+                            <i class="fa-solid fa-clipboard-list"></i><span>Category</span>
+                        </div>
+                    </a>
+                    <a data-th-href="@{/admin/Category}">
+                        <div
+                            class="p-5 m-2 font-semibold dark:shadow-lg shadow-lg  dark:shadow-white hover:bg-emerald-500 hover:text-black hover:scale-105 border-b dark:text-white rounded-xl space-x-6">
+                            <i class="fa-solid fa-box-open"></i><span>view
+                                Product</span>
+                        </div>
+                    </a>
+                    <a data-th-href="@{/admin/Category}">
+                        <div
+                            class="p-5 m-2 font-semibold dark:shadow-lg shadow-lg  dark:shadow-white hover:bg-teal-500 hover:text-black hover:scale-105 border-b dark:text-white rounded-xl space-x-6">
+                            <i class="fa-solid fa-boxes-stacked"></i><span>Order</span>
+                        </div>
+                    </a>
+                    <a data-th-href="@{/admin/Category}">
+                        <div
+                            class="p-5 m-2 font-semibold dark:shadow-lg shadow-lg  dark:shadow-white hover:bg-cyan-500 hover:text-black hover:scale-105 border-b dark:text-white rounded-xl space-x-6">
+                            <i class="fa-solid fa-user-tie"></i><span>User</span>
+                        </div>
+                    </a>
+                    <a data-th-href="@{/admin/Category}">
+                        <div
+                            class="p-5 m-2 font-semibold dark:shadow-lg shadow-lg  dark:shadow-white hover:bg-indigo-500 hover:text-black hover:scale-105 border-b dark:text-white rounded-xl space-x-6">
+                            <i class="fa-solid fa-user-plus"></i><span>Add
+                                Admin</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

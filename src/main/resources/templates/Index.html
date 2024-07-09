@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" data-th-replace="~{base::layout(~{::section})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index Page</title>
+</head>
+
+<body>
+    <section>
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-52 overflow-hidden rounded-lg md:h-52">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/img/slip1.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/img/slip2.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/img/slip3.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/img/slip4.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/img/slip3.webp"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <!-- Images and card -->
+        <div class="rounded-lg p-2">
+            <h3 class="text-2xl to-black p-2">Category</h3>
+            <div class="mt-1 flex justify-evenly flex-col md:flex-row overflow-x-visible gap-1 ">
+                <div class="bg-white  rounded overflow-hidden shadow-md">
+                    <img src="/img/productImg/electroinc.jpeg" class="w-52 h-52 object-cover">
+                    <div class="m-3">
+                        <p class=" text-black font-serif font-bold">Electroinc</p>
+                        <span class="font-mono">min 25% is off</span>
+                    </div>
+                </div>
+                <div class="bg-white  rounded overflow-hidden shadow-md">
+                    <img src="/img/productImg/laptop.jpeg" class="w-52 h-52 object-cover">
+                    <div class="m-3">
+                        <p class=" text-black font-serif font-bold">laptop</p>
+                        <span class="font-mono">min 25% is off</span>
+                    </div>
+                </div>
+                <div class="bg-white  rounded overflow-hidden shadow-md">
+                    <img src="/img/productImg/Headphone.avif" class="w-52 h-52 object-cover">
+                    <div class="m-3">
+                        <p class=" text-black font-serif font-bold">Headphone</p>
+                        <span class="font-mono">min 15% is off</span>
+                    </div>
+                </div>
+                <div class="bg-white  rounded overflow-hidden shadow-md">
+                    <img src="/img/productImg/white_Watch.avif" class="w-52 h-52 object-cover">
+                    <div class="m-3">
+                        <p class=" text-black font-serif font-bold">watch</p>
+                        <span class="font-mono">min 25% is off</span>
+                    </div>
+                </div>
+                <div class="bg-white  rounded overflow-hidden shadow-md">
+                    <img src="/img/productImg/book.jpeg" class="w-52 h-52 object-cover">
+                    <div class="m-3">
+                        <p class=" text-black font-serif font-bold">book</p>
+                        <span class="font-mono">min 25% is off</span>
+                    </div>
+                </div>
+                <div class="bg-white  rounded overflow-hidden shadow-md">
+                    <img src="/img/productImg/cloth.jpeg" class="w-52 h-52 object-cover">
+                    <div class="m-3">
+                        <p class=" text-black font-serif font-bold">cloth</p>
+                        <span class="font-mono">min 25% is off</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End category -->
+        <!-- Start leatest -->
+        <div>
+            <h3 class="text-2xl text-center text-white p-2">Leatest Product</h3>
+            <div class="mt-1 flex justify-evenly flex-col md:flex-row overflow-x-visible gap-1 ">
+                <div class=" rounded-sm  shadow-lg  bg-white">
+                    <img src="/img/productImg/fashion1.jpeg" class="h-52 w-64  object-contain">
+                    <div class="bg-white p-2">
+                        <h2 class="text-3xl font-sans block text-black">Fashion product</h2>
+                        <p>New launch product</p>
+                    </div>
+                </div>
+                <div class="h-52 w-64 rounded-sm  bg-white">
+                    <img src="/img/productImg/homeApplience.jpeg" class="h-52 w-64  object-contain">
+                    <div class="bg-white p-2">
+                        <h2 class="text-3xl font-sans block text-black">Home Applience</h2>
+                        <p>New launch </p>
+                    </div>
+                </div>
+                <div class="h-52 w-64 rounded-sm  bg-white">
+                    <img src="/img/productImg/dryfruits.jpeg" class="h-52 w-64  object-contain">
+                    <div class="bg-white p-2">
+                        <h2 class="text-3xl font-sans block text-black">Dry Fruits</h2>
+                        <p>New launch</p>
+                    </div>
+                </div>
+                <div class="h-52 w-64 rounded-sm  bg-white">
+                    <img src="/img/productImg/furniture.jpeg" class="h-52 w-64  object-contain">
+                    <div class="bg-white p-2">
+                        <h2 class="text-3xl font-sans block text-black">furniture</h2>
+                        <p>New launch</p>
+                    </div>
+                </div>
+                <div class="h-52 w-64 rounded-sm  bg-white">
+                    <img src="/img/productImg/childCloth.jpeg" class="h-52 w-64  object-contain">
+                    <div class="bg-white p-2">
+                        <h2 class="text-3xl font-sans block text-black">Child product</h2>
+                        <p>New launch product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End latest -->
+    </section>
+
+</body>
+
+</html>

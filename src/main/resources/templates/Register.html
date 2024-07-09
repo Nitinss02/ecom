@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" data-th-replace="~{base::layout(~{::section})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register Page</title>
+</head>
+
+<body>
+    <section>
+        <div class="grid grid-cols-2 bg-gray-50 dark:bg-gray-900">
+
+            <div class="sm:col-span-1 col-span-2  flex m-3 items-center justify-center bg-none">
+                <img class="" src="/img/productImg/watch.png" alt="">
+            </div>
+            <div class="col-span-2 sm:col-span-1 bg-blue-500">
+                <section class="bg-white dark:bg-gray-900">
+                    <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+                        <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Register New Account</h2>
+                        <form action="#">
+                            <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                                <div class="sm:col-span-2">
+                                    <label for="name"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full
+                                        Name</label>
+                                    <input type="text" name="name" id="name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="john" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="MobileNumber"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile
+                                        Number</label>
+                                    <input type="number" name="MobileNumber" id="MobileNumber"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="+91 9876543210" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="email"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                                    <input type="email" name="email" id="email"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="ecom@gmail.com" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="Address"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
+                                    <input type="text" name="Address" id="Address"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="karve nagar" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="city"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">city</label>
+                                    <input type="text" name="city" id="city"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="pune" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="state"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">state</label>
+                                    <input type="text" name="state" id="state"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="Maharastra" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="pincode"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">pincode</label>
+                                    <input type="number" name="pincode" id="pincode"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="425232" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="password"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">password</label>
+                                    <input type="password" name="password" id="password"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="********" required="">
+                                </div>
+                                <div class="w-full">
+                                    <label for="cpassword"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">conform
+                                        password</label>
+                                    <input type="text" name="cpassword" id="cpassword"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                        placeholder="*********" required="">
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <label for="profile"
+                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                        profile Image</label>
+                                    <input type="file" name="profile" id="profile"
+                                        class="bg-gray-50   text-gray-900  focus:ring-primary-600 focus:border-primary-600 block w-full  dark:bg-gray-700 dark:border-gray-600  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                </div>
+                                <div class="col-span-1">
+                                    <button type="submit"
+                                        class=" text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-gray-700 hover:bg-gray-800">
+                                        Register
+                                    </button>
+                                    <button type="reset"
+                                        class=" text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-gray-700 hover:bg-gray-800">
+                                        Reset
+                                    </button>
+                                </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
